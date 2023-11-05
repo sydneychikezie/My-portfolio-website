@@ -59,12 +59,14 @@ btnReadLess.addEventListener("click", () => {
 // scroll sections//
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
+
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 100;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
+    let home = sec.classList.contains("home");
 
     if (top >= offset && top < offset + height) {
       // active navbar links
@@ -74,14 +76,13 @@ window.onscroll = () => {
           .querySelector("header nav a[href*=" + id + "]")
           .classList.add("active");
       });
-      // active sections for animation on scroll
-      sec.classList.add("show-animate");
-    }
-    //animation repeats scroll
-    else {
-      sec.classList.remove("show-animate");
+      //animate on scroll
+      if (!home) {
+        sec.classList.add("slide-in");
+      }
     }
   });
+
   // sticky header//
   let header = document.querySelector("header");
 
@@ -91,13 +92,6 @@ window.onscroll = () => {
 
   menuIconBtn.classList.remove("fa-x");
   navbar.classList.remove("active");
-  //animate footer on scroll
-  let footer = document.querySelector("footer");
-
-  footer.classList.toggle(
-    "show-animate",
-    this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
-  );
 };
 
 // set footer date
@@ -118,7 +112,7 @@ form.addEventListener("submit", (e) => {
         "block";
       setTimeout(() => {
         alert(
-          "Thank you for visiting my website and taking the time to get to know me. I look forward to the possibility of collaborating with you and making the web🌐 a more engaging and functional place🤝."
+          "Thank you for contacting me. I look forward to the possibility of collaborating with you and making the web🌐 a more engaging and functional place🤝."
         );
         document.querySelector(".contact .submit-msg.hidden").style.display =
           "";
@@ -128,7 +122,7 @@ form.addEventListener("submit", (e) => {
     .catch((error) => {
       setTimeout(() => {
         alert(
-          "Thank you for visiting my website and taking the time to get to know me. I look forward to the possibility of collaborating with you and making the web🌐 a more engaging and functional place🤝."
+          "Thank you for contacting  me. I look forward to the possibility of collaborating with you and making the web🌐 a more engaging and functional place🤝."
         );
       }, 4000);
       form.reset();
