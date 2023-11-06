@@ -15,7 +15,7 @@
 
 :root {
   --bg-image: #080a15
-    url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(1) rotate(30)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(231, 45%, 6%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.14)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.14)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.14)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.14)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-56,-15)' fill='url(%23a)'/></svg>");
+    url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(1) rotate(30)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(231, 45%, 6%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.30)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.30)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.30)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(192, 96%, 61%, 0.30)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-56,-15)' fill='url(%23a)'/></svg>");
   --bg-color: #080a15;
   --bg-gradient: linear-gradient(-45deg, #2e31ff, #3dd5fb, #3dd5fb, #2e31ff);
   --text-color: #fff;
@@ -76,12 +76,12 @@ body {
 }
 
 .header.sticky {
-  background: var(--bg-image);
+  background: var(--bg-color);
 }
 
 .top-logo p {
   opacity: 0;
-  animation: slideFromBottom 1.5s ease forwards;
+  animation: slideFromBottom 2s ease forwards;
   animation-delay: 0.1s;
 }
 
@@ -172,7 +172,7 @@ body {
   margin-left: 3.5rem;
   transition: 0.3s;
   border-radius: 0.6rem;
-  animation: slideFromBottom 1.5s ease forwards;
+  animation: slideFromBottom 2s ease forwards;
   animation-delay: calc(0.3s * var(--i));
   opacity: 0;
 }
@@ -219,7 +219,7 @@ body {
   display: none;
   cursor: pointer;
   opacity: 0;
-  animation: slideFromBottom 1.5s ease forwards;
+  animation: slideFromBottom 2s ease forwards;
   animation-delay: 0.3s;
 }
 
@@ -249,7 +249,7 @@ section {
   line-height: 1.5;
   font-size: 4rem;
   opacity: 0;
-  animation: slideFromLeft 1.5s ease forwards;
+  animation: slideFromLeft 2s ease forwards;
   animation-delay: 0.5s;
 }
 
@@ -263,7 +263,7 @@ section {
   position: relative;
   width: 50rem;
   opacity: 0;
-  animation: slideFromLeft 1.5s ease forwards;
+  animation: slideFromLeft 2s ease forwards;
   animation-delay: 1s;
 }
 
@@ -305,7 +305,7 @@ section {
   position: relative;
   max-width: 65rem;
   opacity: 0;
-  animation: slideFromLeft 1.5s ease forwards;
+  animation: slideFromLeft 2s ease forwards;
   animation-delay: 1.5s;
 }
 
@@ -336,8 +336,8 @@ section {
 .btn-box .slide-in {
   display: inline-flex;
   opacity: 0;
-  animation: slideFromLeft 1.5s ease forwards;
-  animation-delay: calc(2s * var(--i));
+  animation: slideFromTop 2s ease forwards;
+  animation-delay: calc(2.2s * var(--i));
 }
 
 .btn-box .btn {
@@ -358,6 +358,7 @@ section {
   color: var(--bg-color);
   z-index: 1;
   overflow: hidden;
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
   transition: 0.5s;
 }
 
@@ -366,8 +367,9 @@ section {
 }
 
 .btn-box .btn.btn-1 {
-  background: transparent;
+  background: var(--bg-image);
   color: var(--main-color);
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
 }
 
 .btn-box .btn.btn-1:hover {
@@ -384,17 +386,17 @@ section {
 .btn-box .btn::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 0;
-  height: 100%;
+  width: 100%;
+  height: 0;
   background: var(--bg-image);
   z-index: -1;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .btn-box .btn:hover::before {
-  width: 100%;
+  height: 100%;
 }
 
 .home-sci {
@@ -406,7 +408,7 @@ section {
 }
 
 .home-sci a {
-  animation: slideFromTop 1.5s ease forwards;
+  animation: slideFromTop 2s ease forwards;
   animation-delay: calc(2.3s * var(--i));
   opacity: 0;
 }
@@ -434,6 +436,7 @@ section {
 .layer a:hover,
 .info-sci:hover {
   color: var(--bg-color);
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
 }
 
 .home-sci a::before,
@@ -441,21 +444,21 @@ section {
 .info-sci::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 0%;
-  height: 100%;
+  width: 100%;
+  height: 0;
   background: var(--bg-gradient);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   z-index: -1;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .home-sci a:hover::before,
 .layer a:hover::before,
 .info-sci:hover::before {
-  width: 100%;
+  height: 100%;
 }
 
 .home-imgHover {
@@ -464,7 +467,7 @@ section {
   left: 60%;
   width: 100%;
   background: transparent;
-  animation: slideFromRight 2s ease forwards;
+  animation: slideFromRight 3s ease forwards;
   animation-delay: 2s;
   opacity: 0;
 }
@@ -481,7 +484,7 @@ section {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background: var(--bg-color);
+  background: var(--bg-image);
   padding-bottom: 7rem;
   border-bottom: 0.1rem solid var(--main-color);
   opacity: 0;
@@ -506,6 +509,12 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
+  cursor: pointer;
+}
+
+.aboutImg:hover {
+  transform: scale(1.05);
 }
 
 .aboutImg img {
@@ -528,7 +537,8 @@ span {
   border-bottom: 0.2rem solid var(--bg-color);
   border-left: 0.2rem solid var(--main-color);
   border-right: 0.2rem solid var(--main-color);
-  animation: aboutSpinner 10s linear infinite;
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
+  animation: aboutSpinner 15s linear infinite;
 }
 
 .about-content {
@@ -545,9 +555,9 @@ span {
   position: relative;
   font-size: 1.6rem;
   margin: 2rem auto 3rem;
-  text-align: left;
+  text-align: start;
   line-height: 2.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .about-content p .paragraph {
@@ -618,7 +628,7 @@ span {
   z-index: 1;
   font-size: 2rem;
   text-align: center;
-  animation: slideFromTop 6s ease-out;
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
 }
 
 .skills-box .content p {
@@ -641,13 +651,20 @@ span {
   right: 0;
   width: 100%;
   height: 0;
-  background: var(--bg-color);
+  background: var(--bg-gradient);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   z-index: -1;
-  transition: 0.5s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.skills-box .content:hover path {
+  fill: var(--bg-color);
 }
 
 .skills-box .content:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -659,7 +676,7 @@ span {
 
 .projects {
   padding-bottom: 7rem;
-  background: var(--bg-color);
+  background: var(--bg-image);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -676,14 +693,17 @@ span {
 .projects .projects-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .projects .projects-row .project {
   position: relative;
   overflow: hidden;
   border-radius: 0.6rem;
+  border: 0.2rem solid var(--main-color);
+  overflow: hidden;
   cursor: pointer;
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
 }
 
 .project img {
@@ -710,10 +730,10 @@ span {
   flex-direction: column;
   padding: 0 4rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   z-index: -1;
   background: linear-gradient(to bottom, #3dd5fb51, #080a15e8);
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 
 .project:hover .layer {
@@ -722,7 +742,7 @@ span {
 }
 
 .layer h3 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
@@ -732,8 +752,8 @@ span {
   opacity: 0.9;
 }
 
-.project:hover img {
-  transform: scale(1.1);
+.project:hover {
+  transform: scale(1.05);
 }
 
 .projects .btn-box.btns {
@@ -786,7 +806,7 @@ span {
   display: inline-block;
   position: relative;
   text-align: center;
-  margin: 4rem auto 0;
+  margin: 1rem auto 0;
 }
 
 .info a {
@@ -806,7 +826,7 @@ span {
 }
 
 .info a p {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .contact form {
@@ -823,7 +843,7 @@ span {
   display: inline-block;
   position: relative;
   text-align: center;
-  margin: 4rem auto 2rem;
+  margin: 1rem auto 2rem;
 }
 
 .contact .input {
@@ -857,6 +877,7 @@ span {
   background: transparent;
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -867,26 +888,27 @@ span {
 
 .contact form .focus {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 0;
-  height: 100%;
+  width: 100%;
+  height: 0;
   background: var(--bg-gradient);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 0.6rem;
   z-index: -1;
-  transition: 0.5s;
+  transition: 1s;
   overflow: hidden;
 }
 
 .contact form .input-box .input-field input:focus ~ .focus,
 .contact form .input-box .input-field input:valid ~ .focus,
 .contact form .textarea-field textarea:focus ~ .focus,
-.contact form .textarea-field textarea:valid ~ .focus {
-  width: 100%;
-  z-index: 1;
+.contact form .textarea-field textarea:valid ~ .focus,
+.contact form .input-box .input-field input:hover ~ .focus,
+.contact form .textarea-field textarea:hover ~ .focus {
+  height: 100%;
 }
 
 .contact form .textarea-field {
@@ -955,6 +977,7 @@ span {
   border-radius: 0.6rem;
   height: 4rem;
   width: 4rem;
+  box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
   z-index: 1;
   overflow: hidden;
 }
@@ -962,17 +985,17 @@ span {
 .footer-iconTop a::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 0%;
-  height: 100%;
+  width: 100%;
+  height: 0;
   background: var(--bg-color);
   z-index: -1;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .footer-iconTop a:hover::before {
-  width: 100%;
+  height: 100%;
 }
 
 .footer-iconTop a i {
@@ -1006,6 +1029,7 @@ span {
     width: 4rem;
     z-index: 1;
     overflow: hidden;
+    box-shadow: 0 0 10px 5px rgba(42, 219, 228, 0.12);
   }
 
   #menu-icon i {
